@@ -1,0 +1,22 @@
+[
+  {
+    name: {{objectId()}},
+    owner: {
+      firstName: {{firstName()}},
+      lastName: {{surname()}},
+      mail: {{email()}}
+  },
+  openDays: [
+'{{repeat(3)}}',{{date(new Date(2014, 0, 1), new Date(), "dd")}}
+
+  ],
+  openHours: {
+  start: 10,
+  end: 1 },
+  beers: [
+{
+type: Blonde,
+name: Triple Karmeliet
+}
+] }
+]

@@ -3,5 +3,5 @@ function listPubs() {
 }
 
 function listOpenPubs() {
-    
+
 }

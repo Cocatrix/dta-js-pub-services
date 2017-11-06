@@ -21,5 +21,30 @@
         "type": "Blonde",
         "name": "Triple Karmeliet"
       }
-    ] }
+    ]
+  },
+  {
+    "name": "Astor",
+    "owner": {
+      "firstName": "Astor",
+      "lastName": "V",
+      "mail": "astor@laposte.net"
+    },
+    "openDays": [
+      "Monday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "openHours": {
+      "start": 11,
+      "end": 2 },
+    "beers": [
+      {
+        "type": "Blonde",
+        "name": "Chouffe"
+      }
+    ]
+  }
 ]
