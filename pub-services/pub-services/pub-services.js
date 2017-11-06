@@ -14,6 +14,9 @@ function listOpenPubs() {
     return pubs.filter(openToday);
 }
 
+/*
+ * Exporting to be called in ../index.js
+ */
 module.exports = {
     listPubs: listPubs,
     listOpenPubs: listOpenPubs
