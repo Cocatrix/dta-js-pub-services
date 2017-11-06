@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Cocatrix",
+    "owner": {
+      "firstName": "Maxime",
+      "lastName": "R",
+      "mail": "cocatrix@laposte.net"
+    },
+    "openDays": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "openHours": {
+      "start": 10,
+      "end": 1 },
+    "beers": [
+      {
+        "type": "Blonde",
+        "name": "Triple Karmeliet"
+      }
+    ] }
+]
