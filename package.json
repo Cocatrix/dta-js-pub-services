@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Cocatrix/dta-js-pub-services/issues"
   },
-  "homepage": "https://github.com/Cocatrix/dta-js-pub-services#readme"
+  "homepage": "https://github.com/Cocatrix/dta-js-pub-services#readme",
+  "dependencies": {
+    "moment": "^2.19.1"
+  }
 }
