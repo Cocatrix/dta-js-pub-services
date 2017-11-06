@@ -46,5 +46,27 @@
         "name": "Chouffe"
       }
     ]
+  },
+  {
+    "name": "Dev Club",
+    "owner": {
+      "firstName": "Astor",
+      "lastName": "V",
+      "mail": "astor@laposte.net"
+    },
+    "openDays": [
+      "Monday",
+      "Saturday",
+      "Sunday"
+    ],
+    "openHours": {
+      "start": 11,
+      "end": 2 },
+    "beers": [
+      {
+        "type": "Blonde",
+        "name": "Chouffe"
+      }
+    ]
   }
 ]

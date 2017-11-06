@@ -1,18 +1,30 @@
 
-var services= require('../../pub-services/pub-services/pub-services.js');
+var services = require('../../pub-services')
 
 function getListPubs() {
-    var pubs = services.listPubs();
+    // Get pubs
+    var pubs = services.services.listPubs();
+    // Get names only
+    var pubsNames = pubs.map(function(pub) {
+        return pub.name;
+    });
+    // Print the names
     console.log('\n*** ALL PUBS : ***');
-    for (var pub of pubs) {
+    for (var pub of pubsNames) {
         console.log('* ' + pub);
     }
 }
 
 function getListOpenPubs() {
-    var openPubs = services.listOpenPubs();
+    // Get pubs
+    var openPubs = services.services.listOpenPubs();
+    // Get names only
+    var openPubsNames = openPubs.map(function(pub) {
+        return pub.name;
+    });
+    // Print the names
     console.log('\n** OPEN TODAY : **');
-    for (var pub of openPubs) {
+    for (var pub of openPubsNames) {
         console.log('* ' + pub);
     }
 }
@@ -20,4 +32,4 @@ function getListOpenPubs() {
 module.exports = {
     getListPubs: getListPubs,
     getListOpenPubs: getListOpenPubs
-}
+};

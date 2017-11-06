@@ -3,23 +3,20 @@ const pubs = require('../mocks/pubs.json');
 const moment = require('moment');
 
 function listPubs() {
-    return pubs.map(function(pub) {
-        return pub.name;
-    });
+    return pubs;
 }
 
 function listOpenPubs() {
-    var openPubs = [];
-    for(pub of pubs) {
-        if (pub.openDays.includes(moment().format('dddd'))) {
-            openPubs.push(pub);
-        }
+    function openToday(pub) {
+        return pub.openDays.includes(moment().format('dddd'));
     }
-    return openPubs.map(function(pub) {
-        return pub.name;
-    });
+
+    return pubs.filter(openToday);
 }
 
+/*
+ * Exporting to be called in ../index.js
+ */
 module.exports = {
     listPubs: listPubs,
     listOpenPubs: listOpenPubs
