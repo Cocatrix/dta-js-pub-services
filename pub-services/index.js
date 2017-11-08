@@ -1,5 +1,5 @@
 
-var services= require('./pub-services/pub-services.js');
+const services= require('./pub-services/pub-services.js');
 
 /*
  * Exported to be called in client (../pub-cli/src/main.js)
