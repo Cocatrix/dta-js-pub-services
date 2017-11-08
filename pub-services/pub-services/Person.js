@@ -1,9 +1,9 @@
 
 class Person {
-    constructor (jsonPerson) {
-        this.firstName = jsonPerson.firstName;
-        this.lastName = jsonPerson.lastName;
-        this.email = jsonPerson.email;
+    constructor ({firstName, lastName, email}) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 }
 

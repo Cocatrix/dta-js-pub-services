@@ -4,15 +4,15 @@ const openHoursConstructor = require('./OpenHours.js');
 const beerConstructor = require('./Beer.js');
 
 class Pub {
-    constructor (jsonPub) {
-        this.name = jsonPub.name;
-        this.owner = new personConstructor(jsonPub.owner);
-        this.openDays = jsonPub.openDays;
-        this.openHours = new openHoursConstructor(jsonPub.openHours);
-        this.beers = jsonPub.beers.map(beer => new beerConstructor(beer));
+    constructor ({name, owner, openDays, openHours, beers}) {
+        this.name = name;
+        this.owner = new personConstructor(owner);
+        this.openDays = openDays;
+        this.openHours = new openHoursConstructor(openHours);
+        this.beers = beers.map(beer => new beerConstructor(beer))
     }
     isOpenToday() {
-        return this.openDays.includes(moment().format('dddd'));
+        return this.openDays.includes(moment().format('dddd'))
     }
 }
 

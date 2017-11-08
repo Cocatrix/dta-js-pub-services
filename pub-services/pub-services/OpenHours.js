@@ -1,8 +1,8 @@
 
 class OpenHours {
-    constructor (jsonOpenHours) {
-        this.start = jsonOpenHours.start;
-        this.end = jsonOpenHours.end;
+    constructor ({start, end}) {
+        this.start = start;
+        this.end = end;
     }
 }
 

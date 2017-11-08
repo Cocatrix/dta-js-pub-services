@@ -6,7 +6,7 @@ function getListPubs() {
     // Get pubs
     const pubs = services.services.listPubs();
     // Get names only
-    getNamesAndPrint(pubs);
+    getNamesAndPrint(pubs)
 }
 
 function getListOpenPubs() {
@@ -14,14 +14,14 @@ function getListOpenPubs() {
     // Get pubs
     const openPubs = services.services.listOpenPubs();
     // Get names only
-    getNamesAndPrint(openPubs);
+    getNamesAndPrint(openPubs)
 }
 
 function getNamesAndPrint(array) {
     const pubsNames = array.map(pub => pub.name);
     // Print the names
     for (const pub of pubsNames) {
-        console.log('* ' + pub);
+        console.log(`* ${pub}`)
     }
 }
 

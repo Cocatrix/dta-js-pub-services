@@ -2,16 +2,14 @@ const pubs = require('../mocks/pubs.json');
 const pubConstructor = require('./Pub.js');
 
 
-const allPubs = function() {
-    return pubs.map(pub => new pubConstructor(pub));
-};
+const allPubs = pubs.map(pub => new pubConstructor(pub));
 
 function listPubs() {
-    return allPubs();
+    return allPubs
 }
 
 function listOpenPubs() {
-    return allPubs().filter(pub => pub.isOpenToday());
+    return allPubs.filter(pub => pub.isOpenToday())
 }
 
 /*

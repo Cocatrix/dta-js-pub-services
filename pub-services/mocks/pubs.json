@@ -44,6 +44,10 @@
       {
         "type": "Blonde",
         "name": "Chouffe"
+      },
+      {
+        "type": "Blonde",
+        "name": "Triple Karmeliet"
       }
     ]
   },
@@ -70,7 +74,7 @@
     ]
   },
   {
-    "name": "Game pub",
+    "name": "Game Pub",
     "owner": {
       "firstName": "Loli",
       "lastName": "T",
@@ -86,7 +90,7 @@
       "end": 0 },
     "beers": [
       {
-        "type": "Brune",
+        "type": "Strong",
         "name": "Chouffe"
       }
     ]

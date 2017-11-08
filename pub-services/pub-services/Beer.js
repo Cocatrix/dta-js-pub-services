@@ -1,8 +1,8 @@
 
 class Beer {
-    constructor (jsonBeer) {
-        this.type = jsonBeer.type;
-        this.name = jsonBeer.name;
+    constructor ({type, name}) {
+        this.type = type;
+        this.name = name;
     }
 }
 
