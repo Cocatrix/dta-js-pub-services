@@ -1,9 +1,9 @@
 
 class Person {
-    constructor ({firstName, lastName, email}) {
+    constructor ({firstName, lastName, mail}) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
+        this.mail = mail;
     }
 }
 
