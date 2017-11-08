@@ -1,17 +1,21 @@
-//const _ = require('lodash');
 const pubs = require('../mocks/pubs.json');
-const moment = require('moment');
+const pubClass = require('./pub.js');
+
+
+const allPubs = function() {
+    const myTab = [];
+    for (const pub of pubs) {
+        myTab.push(new pubClass.Pub(pub.name, pub.owner, pub.openDays, pub.openHours, pub.beers));
+    }
+    return myTab;
+};
 
 function listPubs() {
-    return pubs;
+    return allPubs;
 }
 
 function listOpenPubs() {
-    function openToday(pub) {
-        return pub.openDays.includes(moment().format('dddd'));
-    }
-
-    return pubs.filter(openToday);
+    return allPubs.filter(pub => pub.isOpenToday());
 }
 
 /*
