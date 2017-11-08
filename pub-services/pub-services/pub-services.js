@@ -1,23 +1,21 @@
-//const _ = require('lodash');
 const pubs = require('../mocks/pubs.json');
-const moment = require('moment');
+const pubConstructor = require('./Pub.js');
+
+
+const allPubs = pubs.map(pub => new pubConstructor(pub));
 
 function listPubs() {
-    return pubs;
+    return allPubs
 }
 
 function listOpenPubs() {
-    function openToday(pub) {
-        return pub.openDays.includes(moment().format('dddd'));
-    }
-
-    return pubs.filter(openToday);
+    return allPubs.filter(pub => pub.isOpenToday())
 }
 
 /*
- * Exporting to be called in ../index.js
+ * To be called in '../index.js'
  */
 module.exports = {
-    listPubs: listPubs,
-    listOpenPubs: listOpenPubs
+    listPubs,
+    listOpenPubs
 };
