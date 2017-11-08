@@ -1,10 +1,13 @@
 
-class Owner {
-    constructor (jsonOwner) {
-        this.firstName = jsonOwner.firstName;
-        this.lastName = jsonOwner.lastName;
-        this.email = jsonOwner.email;
+class Person {
+    constructor (jsonPerson) {
+        this.firstName = jsonPerson.firstName;
+        this.lastName = jsonPerson.lastName;
+        this.email = jsonPerson.email;
     }
 }
 
-module.exports = Owner;
+/*
+ * Used in './Pub.js'
+ */
+module.exports = Person;

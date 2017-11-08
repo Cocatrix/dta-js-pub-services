@@ -6,4 +6,7 @@ class OpenHours {
     }
 }
 
+/*
+ * Used in './Pub.js'
+ */
 module.exports = OpenHours;
