@@ -7,6 +7,6 @@ class Beer {
 }
 
 /*
- * Used in './Pub.js'
+ * To be called in './Pub.js'
  */
 module.exports = Beer;

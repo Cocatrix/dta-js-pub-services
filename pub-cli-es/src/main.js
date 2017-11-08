@@ -2,18 +2,18 @@
 const services = require('../../pub-services');
 
 function getListPubs() {
-    console.log('\n*** ALL PUBS : ***');
     // Get pubs
     const pubs = services.services.listPubs();
-    // Get names only
+    // Print (names only)
+    console.log('\n*** ALL PUBS : ***');
     getNamesAndPrint(pubs)
 }
 
 function getListOpenPubs() {
-    console.log('\n** OPEN TODAY : **');
     // Get pubs
     const openPubs = services.services.listOpenPubs();
-    // Get names only
+    // Print (names only)
+    console.log('\n** OPEN TODAY : **');
     getNamesAndPrint(openPubs)
 }
 
@@ -24,7 +24,9 @@ function getNamesAndPrint(array) {
         console.log(`* ${pub}`)
     }
 }
-
+/*
+ * To be called in '../bin/index.js'
+ */
 module.exports = {
     getListPubs: getListPubs,
     getListOpenPubs: getListOpenPubs

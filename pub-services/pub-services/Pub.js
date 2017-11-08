@@ -17,6 +17,6 @@ class Pub {
 }
 
 /*
- * Used in './pub-services.js'
+ * To be called in './pub-services.js'
  */
 module.exports = Pub;

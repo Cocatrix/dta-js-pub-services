@@ -13,7 +13,7 @@ function listOpenPubs() {
 }
 
 /*
- * Exporting to be called in ../index.js
+ * To be called in '../index.js'
  */
 module.exports = {
     listPubs,

@@ -2,7 +2,7 @@
 const services= require('./pub-services/pub-services.js');
 
 /*
- * Exported to be called in client (../pub-cli-es/src/main.js)
+ * To be called in client (here : '../pub-cli-es/src/main.js')
  */
 module.exports = {
     services: {
