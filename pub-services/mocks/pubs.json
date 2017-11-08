@@ -68,5 +68,27 @@
         "name": "Chouffe"
       }
     ]
+  },
+  {
+    "name": "Game pub",
+    "owner": {
+      "firstName": "Loli",
+      "lastName": "T",
+      "mail": "lolita@laposte.net"
+    },
+    "openDays": [
+      "Wednesday",
+      "Saturday",
+      "Sunday"
+    ],
+    "openHours": {
+      "start": 17,
+      "end": 0 },
+    "beers": [
+      {
+        "type": "Brune",
+        "name": "Chouffe"
+      }
+    ]
   }
 ]

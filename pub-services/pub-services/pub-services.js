@@ -11,11 +11,11 @@ const allPubs = function() {
 };
 
 function listPubs() {
-    return allPubs;
+    return allPubs();
 }
 
 function listOpenPubs() {
-    return allPubs.filter(pub => pub.isOpenToday());
+    return allPubs().filter(pub => pub.isOpenToday());
 }
 
 /*

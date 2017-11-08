@@ -5,9 +5,7 @@ function getListPubs() {
     // Get pubs
     const pubs = services.services.listPubs();
     // Get names only
-    const pubsNames = pubs.map(function(pub) {
-        return pub.name;
-    });
+    const pubsNames = pubs.map(pub => pub.name);
     // Print the names
     console.log('\n*** ALL PUBS : ***');
     for (const pub of pubsNames) {
