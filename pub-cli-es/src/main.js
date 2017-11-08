@@ -17,9 +17,7 @@ function getListOpenPubs() {
     // Get pubs
     const openPubs = services.services.listOpenPubs();
     // Get names only
-    const openPubsNames = openPubs.map(function(pub) {
-        return pub.name;
-    });
+    const openPubsNames = openPubs.map(pub => pub.name);
     // Print the names
     console.log('\n** OPEN TODAY : **');
     for (const pub of openPubsNames) {
